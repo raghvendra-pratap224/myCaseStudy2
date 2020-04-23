@@ -1,0 +1,72 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 24,
+        "name": "− Login functionality for testmeapp.",
+        "description": "",
+        "id": "scenario-outline;−-login-functionality-for-testmeapp.;−;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 81843899500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user navigates to testmeapp",
+            "match": {
+              "location": "Test_Steps.user_navigates_to_testmeapp()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5581128300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I enter Username as \"AlexUser\" and Password as \"Alex123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AlexUser",
+                  "offset": 21
+                },
+                {
+                  "val": "Alex123",
+                  "offset": 48
+                }
+              ],
+              "location": "Test_Steps.i_enter_Username_as_and_Password_as(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1513210700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "login should be successful",
+            "match": {
+              "location": "Test_Steps.validateRelogin()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "scenario outline",
+    "description": "",
+    "id": "scenario-outline",
+    "keyword": "Feature",
+    "uri": "myLogin.feature"
+  }
+]
