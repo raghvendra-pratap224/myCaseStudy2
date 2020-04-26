@@ -4,6 +4,7 @@ package test_definition;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import cucumber.api.PendingException;
@@ -49,11 +50,17 @@ public class Test_Steps {
     @Then("^login should be successful$")
 
     public void validateRelogin() {
-
-      
-
-       System.out.println(" login was unsuccessful ");
-
+     String logged=driver.findElement(By.linkText("SignOut")).getText();
+     {
+      if(logged.equals("SignOut"))
+      {
+    	  System.out.println("Login is successful");
+      }
+      else
+      {
+    	 System.out.println(" login was unsuccessful ");
+      }
+     }
        driver.close(); 
 
                }

@@ -21,4 +21,4 @@ Then login should be successful
 Examples: −
 
 | username  | password  |
-| AlexUser | Alex123 |
+| raghu2241 | 123456|
